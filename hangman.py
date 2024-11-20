@@ -1,6 +1,5 @@
 import random
 from words import words
-#words = ['orange','grape','apple','banana','blueberry']
 hangman_art ={
     0: (' ',
         ' ',
@@ -71,23 +70,28 @@ def main():
                     print('\nInvalid input. \nYou need to guess 1 letter at a time, no numbers and no special charecters try again.')
                     continue
                 
-                #If the user enters a character they have alredy guessed
-                if guess in guessed_letters and guess not in answer:
-                    print(f'{guess} is already guessed and was incorrect.')
-                elif guess in guessed_letters:
-                    print(f'{guess} is already guessed.')
                     
                 
-                guessed_letters.add(guess)
 
                 #If the guess is correct
                 if guess in answer:
                     for i in range(len(answer)):
                         if answer[i] == guess:
                             hint[i] = guess
-                    print('\nCORRECT! The word now looks like: '+' '.join(hint))    
+                    print('\nCORRECT! The word now looks like this: '+' '.join(hint))    
+
+                #If the user enters a character they have alredy guessed
+                elif guess in guessed_letters and guess not in answer:
+                    print(f'{guess} is already guessed and was incorrect.')
+                elif guess in guessed_letters:
+                    print(f'{guess} is already guessed.')
+                    
                 else:
+                    print('\nINCORRECT! The word looks like this: '+' '.join(hint))    
                     incorrect_guesses +=1
+
+                guessed_letters.add(guess)
+
 
                 if '_' not in hint:
                     display_man(incorrect_guesses)
@@ -102,7 +106,7 @@ def main():
             
             
         else:
-            print('GOODBYE!!!')
+            print('GOODBYE!!! SEE YOU SOON.')
             break
 
 if __name__ == '__main__':
