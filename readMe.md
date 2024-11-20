@@ -16,8 +16,7 @@ The game ends when the player either guesses the word correctly or runs out of a
 
 ## Requirements
 1. [Python 3.12.4](https://www.python.org/)
-This game uses python 3, you must have  Python version installed on your machine to run this game. More information [Here](https://django.readthedocs.io/en/stable/faq/install.html)
-
+This game uses python 3, you must have  Python version installed on your machine to run this game. 
 ## Installation
 
 1. Clone or Download this repository:
