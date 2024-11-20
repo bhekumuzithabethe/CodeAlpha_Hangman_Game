@@ -33,15 +33,14 @@ hangman_art ={
 
 
 def display_man(incorrect_guesses):
-    print(f'\n\nINCORRECT GUESSES SO FAR: {incorrect_guesses}/6')
+    print(f'\n\nYou have: {incorrect_guesses} attempts remaining')
     print('\n/////////////////////')
     for line in hangman_art[incorrect_guesses]:
         print('\t'+line)
     print('/////////////////////\n\n')
     
-    
 def display_hint(hint):
-    print(' '.join(hint))
+    print(f'The word has {len(hint)} letters: '+' '.join(hint))
 
 def display_answer(answer):
     print(' '.join(answer))
@@ -63,7 +62,7 @@ def main():
                 display_man(incorrect_guesses)
                 display_hint(hint)
 
-                guess = input('Enter a letter: ').lower()
+                guess = input('\nEnter a letter: ').lower()
                 
                 #If the user enters a number or more than one character
                 if len(guess)!=1 or not guess.isalpha():
@@ -84,6 +83,7 @@ def main():
                     for i in range(len(answer)):
                         if answer[i] == guess:
                             hint[i] = guess
+                    print('\nCORRECT! The word now looks like: '+' '.join(hint))    
                 else:
                     incorrect_guesses +=1
 
