@@ -47,7 +47,7 @@ def display_answer(answer):
 
 def main():
     while True:
-        start_game = int(input('\nEnter 1 to continue and 0 to quit: '))
+        start_game = int(input('\nEnter 1 to play and 0 to quit: '))
         
         if start_game == 1:
             
@@ -90,12 +90,12 @@ def main():
                 if '_' not in hint:
                     display_man(incorrect_guesses)
                     display_answer(f'The correct answer is: {answer}')
-                    print('YOU WIN!')
+                    print('You win!!!')
                     is_running = False
                 elif incorrect_guesses==6:
                     display_man(incorrect_guesses)
                     display_answer(f'The correct answer is: {answer}')
-                    print('YOU LOOSE!')
+                    print('You loose!!!')
                     is_running = False            
             
             
