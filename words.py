@@ -1,6 +1,6 @@
 words = ('Apple', 'Apricot', 'Banana', 'Blackberry', 'Blueberry',
 'Boysenberry', 'Canary', 'Melon', 'Cantaloupe', 'Melon', 'Cherimoya',
-'Cherry',  'Clementine' 'Cranberry', 
+'Cherry',  'Clementine', 'Cranberry', 
 'Currants', 'Dates', 'Durian', 'Figs',
 'Gooseberry', 'Grapes', 'Grapefruit', 'Guava', 'Jujube', 'Kiwi', 'Kumquat',
 'Lemon', 'Lime', 'Loganberry', 'Longan ','Loquat',

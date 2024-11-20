@@ -1,5 +1,6 @@
 import random
 from words import words
+#words = ['orange','grape','apple','banana','blueberry']
 hangman_art ={
     0: (' ',
         ' ',
@@ -33,7 +34,8 @@ hangman_art ={
 
 
 def display_man(incorrect_guesses):
-    print(f'\n\nYou have: {incorrect_guesses} attempts remaining')
+    remaining_attempts = 6 - incorrect_guesses
+    print(f'\n\nYou have: {remaining_attempts} attempts remaining')
     print('\n/////////////////////')
     for line in hangman_art[incorrect_guesses]:
         print('\t'+line)
