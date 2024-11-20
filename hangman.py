@@ -57,7 +57,7 @@ def main():
             guessed_letters = set()
             is_running = True
             
-            print('\nThis is an a fruit Hangman game in which you guess a name of a fruit chosen at random from a fruit list consisting 61 fruits.\n\nRULES: \n1. You have 6 chances to guess the fruit name guessing only one letter of the whole word.\n2. Do not enter a number.\n3. Do not enter a whole word, just one character of the fruit you think it is.\n4. Do not enter any of the special characters such as(@, #,$.etc)')
+            print('\nThis is an a fruit Hangman game, this game game allows you to guess a hidden fruit word by suggesting letters within 6 number of attempts the name of a fruit is chosen at random from a fruit list consisting 61 fruits.\n\nRULES: \n1. You have 6 chances to guess the fruit name guessing only one letter of the whole word.\n2. Do not enter a number.\n3. Do not enter a whole word, just one character of the fruit you think it is.\n4. Do not enter any of the special characters such as(@, #,$.etc)')
             while is_running:
                 display_man(incorrect_guesses)
                 display_hint(hint)
